@@ -23,12 +23,13 @@ pasien InputDataPasien (pasien P) {
     printf(" INPUT DATA PASIEN  \n");
     printf("Rumah Sakit Bangkit Bersama\n");
     printf("——————————–\n");
-    printf(" Nama : "); scanf("%[^\n]", &P.nama); /*Digunakan fungsi scanf untuk mengambil input dari keyboard dengan format scanf("%[^\n]" guna mengambil karakter hingga baris baru ditemukan. &P.nama digunakan untuk memanggil format data diri pasien (nama) pada syntax typedef*/
+    printf(" Nama : "); scanf("%[^\n]", &P.nama); /*Digunakan fungsi scanf untuk mengambil input dari keyboard dengan format scanf("%[^\n]" guna mengambil karakter hingga baris baru ditemukan. & adalah simbol untuk mengambil alamat memori dari variabel (P.nama), dsini digunakan untuk memanggil format data diri pasien (nama) pada syntax typedef*/
     printf(" NIK : "); scanf("%s", &P.NIK); /*Digunakan fungsi scanf untuk mengambil input dari keyboard dengan format scanf("%s" dimana mengeksekusi/mengambil karakter pertama saja.*/
     printf(" Tanggal Lahir (Contoh: DD MM YYYY) \n");
-    printf(" : ");scanf("%s%s%s", &P.L.dd, &P.L.mm, P.L.hh); /*&P.L.dd, %P.L.mm, &P.L.hh digunakan untuk memanggil data diri pasien (lahir L) dan memanggil typedef struct lahir secara bersama.*/
+    printf(" : "); scanf("%s%s%s", &P.L.dd, &P.L.mm, P.L.hh); /*&P.L.dd, %P.L.mm, &P.L.hh digunakan untuk memanggil data diri pasien (lahir L) dan memanggil typedef struct lahir secara bersama.*/
     printf(" Jenis Kelamin : ");scanf("%s", &P.jenis_kelamin);
-    printf(" Alamat : "); scanf("%s", &P.alamat);
+    printf(" Alamat (Contoh: aa_bb_cc) \n");
+    printf(" : "); scanf("%s", &P.alamat);
     printf("\n\n\n");
 return P; /*digunakan fungsi return P untuk kembalikan nilai yang tersimpan di dalam variabel input data pasien kepada kode yang akan memanggil fungsi tersebut*/
 
