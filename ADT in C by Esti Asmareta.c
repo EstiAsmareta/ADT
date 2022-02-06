@@ -28,7 +28,7 @@ pasien InputDataPasien (pasien P) {
     printf(" Tanggal Lahir (Contoh: DD MM YYYY) \n");
     printf(" : ");scanf("%s-%s-%s", &P.L.dd, &P.L.mm, P.L.hh); /*&P.L.dd, %P.L.mm, &P.L.hh digunakan untuk memanggil data diri pasien (lahir L) dan memanggil typedef struct lahir secara bersama.*/
     printf(" Jenis Kelamin : ");scanf("%s", &P.jenis_kelamin);
-    printf(" Alamat : "); scanf("%[^\n]", &P.alamat);
+    printf(" Alamat : "); scanf("%s", &P.alamat);
     printf("\n\n\n");
 return P; /*digunakan fungsi return P untuk kembalikan nilai yang tersimpan di dalam variabel input data pasien kepada kode yang akan memanggil fungsi tersebut*/
 
