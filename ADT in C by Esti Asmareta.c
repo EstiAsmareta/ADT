@@ -2,7 +2,7 @@
 
 #include<stdio.h> /*pertama menambahkan library untuk input/output data*/
 
-/*Membuat data tanggal lahir asien dengan menggunakan syntax tyedef yang mana merupakan kode dalam data ADT dan syntax character. data ini diberi nama lahir */
+/*Membuat data tanggal lahir pasien dengan menggunakan syntax tyedef yang mana merupakan kode dalam data ADT dan syntax character yang meruakan salah satu tipe data pada bahasa pemrograman C. data ini diberi nama lahir */
 typedef struct{
     char dd[10];
     char mm[10];
@@ -23,7 +23,7 @@ pasien InputDataPasien (pasien P) {
     printf(" INPUT DATA PASIEN  \n");
     printf("Rumah Sakit Bangkit Bersama\n");
     printf("——————————–\n");
-    printf(" Nama : "); scanf("%[^\n]", &P.nama); /*Digunakan fungsi scanf untuk mengambil input dari keyboard dengan format scanf("%[^\n]" guna mengambil karakter hingga baris baru ditemukan. & adalah simbol untuk mengambil alamat memori dari variabel (P.nama), dsini digunakan untuk memanggil format data diri pasien (nama) pada syntax typedef*/
+    printf(" Nama : "); scanf("%[^\n]", &P.nama); /*Digunakan fungsi scanf untuk mengambil input dari keyboard dengan format "%[^\n]" guna mengambil karakter hingga baris baru ditemukan. & adalah simbol untuk mengambil alamat memori dari variabel (P.nama), dsini digunakan untuk memanggil format data diri pasien (nama) pada syntax typedef*/
     printf(" NIK : "); scanf("%s", &P.NIK); /*Digunakan fungsi scanf untuk mengambil input dari keyboard dengan format scanf("%s" dimana mengeksekusi/mengambil karakter pertama saja.*/
     printf(" Tanggal Lahir (Contoh: DD MM YYYY) \n");
     printf(" : "); scanf("%s%s%s", &P.L.dd, &P.L.mm, P.L.hh); /*&P.L.dd, %P.L.mm, &P.L.hh digunakan untuk memanggil data diri pasien (lahir L) dan memanggil typedef struct lahir secara bersama.*/
